@@ -5,11 +5,12 @@ server:
   outputFormat: "yaml"  # yaml | json
   debug: false
   cors: true
+  host: http://localhost
 
 # Redis集群配置
 redis:
   addr: redis:6379
-  password: kcserver
+  password: 
   db: 0
 
 # 认证配置

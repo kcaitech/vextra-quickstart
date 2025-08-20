@@ -105,7 +105,7 @@ services:
       - ./config/config-vextra-server.yaml:/app/config/config.yaml
 
   mcp:
-    image: kcaitech/mcp:latest
+    image: kcaitech/vextra-mcp:latest
     container_name: mcp
     restart: always
     ports:
