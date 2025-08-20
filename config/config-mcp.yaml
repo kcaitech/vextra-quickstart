@@ -1,0 +1,33 @@
+# MCP File Server Configuration
+
+# 服务器配置
+server:
+  outputFormat: "yaml"  # yaml | json
+  debug: false
+  cors: true
+
+# Redis集群配置
+redis:
+  addr: redis:6379
+  password: kcserver
+  db: 0
+
+# 认证配置
+auth:
+  addr: "http://vextra/api/v1/access/token"
+  expire: 3600
+
+storage:
+  provider: minio
+  endpoint: "minio:9000"
+  region: "zhuhai-1"
+  accessKeyID: "T64JKDV276dJp10"
+  secretAccessKey: "1JzdCtZqgiys22q"
+  stsAccessKeyID: "user"
+  stsSecretAccessKey: "LRfETL5HGUGAGv9"
+  mcpBucket: "mcp"
+
+storage_public_url:
+  mcp: "http://localhost:9000/mcp"
+
+ws_url: "ws://vextra/api/v1/access/ws"
