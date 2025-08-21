@@ -6,6 +6,7 @@ server:
   debug: false
   cors: true
   host: http://localhost
+  at: server
 
 # Redis集群配置
 redis:
